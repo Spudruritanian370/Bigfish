@@ -815,6 +815,8 @@ if (!gotLock) {
     }, 1500);
   });
   ipcMain.on('pet-set-ignore-mouse', (_e, ignore) => {
+    // 点击穿透只在 Windows 上可靠；Linux 上一旦开启整条鱼都点不到
+    if (process.platform !== 'win32') return;
     if (petWindow && !petWindow.isDestroyed()) {
       petWindow.setIgnoreMouseEvents(ignore, { forward: true });
     }
